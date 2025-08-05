@@ -1,2 +1,2 @@
-# HEFT-CODE
+# HEFT
 Heterogeneous earliest finish time (HEFT)
