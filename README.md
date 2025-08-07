@@ -14,7 +14,7 @@ HEFT 알고리즘은 2단계로 나뉜다.
     <img width="862" height="463" alt="스크린샷 2025-08-07 오후 2 17 04" src="https://github.com/user-attachments/assets/4946a0e1-7d0f-4bc5-adc1-15444a1032e3" />
 
 
----
+
 ### GPU 환경 및 성능
 
 본 프로젝트는 다음과 같은 GPU 환경에서 HEFT을 적용하였다.
@@ -39,7 +39,7 @@ Single-precision 기준으로 연산 성능이 6000이 3090보다 약 2.5배 더
 Tensor Core 기준으로는 6000이 3090보다 약 5.1배 더 빠르다.
 GPU 간 또는 GPU-CPU 간 데이터 전송 속도는 32 GB/s이다.
 
----
+
 ### 모델 구조  및 연산량
 
 본 시스템은 Llama3-8B-Instruct 모델에 **QLoRA** 및 **FlashAttention**을 적용한 구조를 기반으로 하며, 전체 연산 흐름은 아래의 DAG(Task Graph)로 표현됩니다.
@@ -66,7 +66,7 @@ GPU 간 또는 GPU-CPU 간 데이터 전송 속도는 32 GB/s이다.
 | Norm               | 2                | 0.8              | 0.8              |
 | Lm_head            | 256300           | 102520           | 102520           |
 
----
+
 ### HEFT 알고리즘 실험
 
 ##### HEFT 적용하지 않고 Auto로 사용할 경우 실제 학습 시간 
@@ -87,12 +87,12 @@ HEFT 적용 시, 모든 레이어는 성능이 가장 우수한 GPU 0(Ada 6000)�
 
 알고리즘을 통해 나온 결과로 Layer를 할당하였을 때,`2시간 49분 22초`가 걸렸다.
 
----
+
 ### 결과
 
 결과적으로 HEFT 알고리즘을 적용하지 않고 AUTO로 Layer를 할당하여 학습 하는 것보다 HEFT 알고리즘을 통한 Layer 할당이 약 3시간 정도 빠른 것으로 확인 하였다.
 
----
+
 ### 코드 검증
 본 연구에서 구현한 HEFT 알고리즘 코드의 정확성을 검증하기 위해,
 HEFT 알고리즘 논문 *“Performance-Effective and Low-Complexity Task Scheduling for Heterogeneous Computing”*에 제시된 예제를 기준으로 테스트를 진행하였다.
