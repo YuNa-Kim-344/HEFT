@@ -80,10 +80,9 @@ GPU 간 또는 GPU-CPU 간 데이터 전송 속도는 32 GB/s이다.
 ##### HEFT 알고리즘을 적용한 학습 시간
 
 HEFT 적용 시, 모든 레이어는 성능이 가장 우수한 GPU 0(Ada 6000)에 배정되었다.
+
 <img width="335" height="343" alt="image" src="https://github.com/user-attachments/assets/7306f0fd-b256-4c21-801b-a1440a5465b9" />
 <img width="333" height="330" alt="image" src="https://github.com/user-attachments/assets/5ef943a1-7e3b-4fdb-8bea-657ecbc575eb" />
-
-
 
 
 알고리즘을 통해 나온 결과로 Layer를 할당하였을 때,`2시간 49분 22초`가 걸렸다.
