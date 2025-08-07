@@ -105,12 +105,15 @@ HEFT 알고리즘 논문 *“Performance-Effective and Low-Complexity Task Sched
 - P1 -> Task 2, Task 8
 - P2 -> Task 4, Task 6, Task 9, Task 10
 - P3 -> Task 1, Task 3, Task 5, Task 7
+  
 <img width="199" height="319" alt="image" src="https://github.com/user-attachments/assets/a88c0df5-b973-459d-ada6-5f69cffcf24e" />
 
 
 본 연구의 HEFT 알고리즘 코드에 동일한 예제를 적용하였을때, 다음과 같이 동일한 결과가 출력되는 것을 확인하였다.
-이에 본 연구의 HEFT 알고리즘 코드가 적절하다는 것을 확인하였다.
+
 <img width="288" height="326" alt="image" src="https://github.com/user-attachments/assets/5fe3618b-6a1e-4ae7-990c-ad5dab917ca2" />
+
+이에 본 연구의 HEFT 알고리즘 코드가 적절하다는 것을 확인하였다.
 
 
 
